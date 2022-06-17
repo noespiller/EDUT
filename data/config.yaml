@@ -1,0 +1,8 @@
+credentials:
+  names: ['Noémie Spiller', 'Rebecca Briggs']
+  usernames: ['nspiller', 'rbriggs']
+  passwords: ['$2b$12$/Pid43jcGvagXhkRATTi4.9z.MAArPV/q6PDGmoaCJ3dEu9azWe6q', '$2b$12$TX/TxHb1SldEnXCxEcVJxO0uCeQ8ZOfAoaGw140tOSfru6wnVTJmu'] # To be replaced with hashed passwords
+cookie:
+  name: 'some_cookie_name'
+  key: 'some_signature_key'
+  expiry_days: 30
