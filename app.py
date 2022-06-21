@@ -46,18 +46,7 @@ PAGES = {
 }
 selected = "Geschichte"
 
-# set background color
-st.markdown(
-         f"""
-         <style>
-         .stApp {{
-             background: url("https://images.pexels.com/photos/19670/pexels-photo.jpg?cs=srgb&dl=pexels-miguel-%C3%A1-padri%C3%B1%C3%A1n-19670.jpg&fm=jpg");
-             background-size: cover
-         }}
-         </style>
-         """,
-         unsafe_allow_html=True
-     )
+
 
 # authentification
 with open('data/config.yaml') as file:
