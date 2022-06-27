@@ -14,6 +14,8 @@ import theorieOrdner.listenTheorie
 import theorieOrdner.schleifenTheorie
 import theorieOrdner.funktionenTheorie
 import geschichte
+import geschichtenOrdner.printAufgabenGeschichte
+import geschichtenOrdner.variablenErstellenAufgabenGeschichte
 from streamlit_option_menu import option_menu
 import streamlit as st
 import streamlit_authenticator as stauth
@@ -46,6 +48,8 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 PAGES = {
     "Geschichte": geschichte,
+    "Geschichte - Chapter 1": geschichtenOrdner.printAufgabenGeschichte,
+    "Geschichte - Chapter 2": geschichtenOrdner.variablenErstellenAufgabenGeschichte,
     "Aufgaben": aufgaben,
     "Aufgaben - print()": aufgabenOrdner.printAufgaben,
     "Aufgaben - Variablen": aufgabenOrdner.variablenAufgaben,
