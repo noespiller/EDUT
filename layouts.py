@@ -4,13 +4,14 @@ import tools
 import global_constants
 
 def theorie_layout(title, video_path, cheat_sheet_path):
-    st.title(title)
+    st.header(title)
     st.subheader("")
     st.subheader("Video")
     st.video(video_path)
     st.subheader("")
-    st.subheader("Cheat Sheet")
-    st.image(cheat_sheet_path)
+    if cheat_sheet_path != None:
+        st.subheader("Cheat Sheet")
+        st.image(cheat_sheet_path)
 
 
 def aufgabe_layout(title, aufgabe):
