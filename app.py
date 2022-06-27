@@ -1,9 +1,18 @@
 import aufgaben
 import aufgabenOrdner.printAufgaben
-import aufgabenOrdner.variablenErstellenAufgaben
+import aufgabenOrdner.variablenAufgaben
+import aufgabenOrdner.ifAufgaben
+import aufgabenOrdner.listenAufgaben
+import aufgabenOrdner.schleifenAufgaben
+import aufgabenOrdner.funktionenAufgaben
 import theorie
 import theorieOrdner.printTheorie
 import theorieOrdner.datentypenTheorie
+import theorieOrdner.variablenTheorie
+import theorieOrdner.ifTheorie
+import theorieOrdner.listenTheorie
+import theorieOrdner.schleifenTheorie
+import theorieOrdner.funktionenTheorie
 import geschichte
 from streamlit_option_menu import option_menu
 import streamlit as st
@@ -39,10 +48,19 @@ PAGES = {
     "Geschichte": geschichte,
     "Aufgaben": aufgaben,
     "Aufgaben - print()": aufgabenOrdner.printAufgaben,
-    "Aufgaben - Variablen erstellen": aufgabenOrdner.variablenErstellenAufgaben,
+    "Aufgaben - Variablen": aufgabenOrdner.variablenAufgaben,
+    "Aufgaben - If Statement": aufgabenOrdner.ifAufgaben,
+    "Aufgaben - Listen": aufgabenOrdner.listenAufgaben,
+    "Aufgaben - Schleifen": aufgabenOrdner.schleifenAufgaben,
+    "Aufgaben - Funktionen": aufgabenOrdner.funktionenAufgaben,
     "Theorie": theorie,
     "Theorie - print()": theorieOrdner.printTheorie,
-    "Theorie - Datentypen": theorieOrdner.datentypenTheorie
+    "Theorie - Datentypen": theorieOrdner.datentypenTheorie,
+    "Theorie - Variablen": theorieOrdner.variablenTheorie,
+    "Theorie - If Statement": theorieOrdner.ifTheorie,
+    "Theorie - Listen": theorieOrdner.listenTheorie,
+    "Theorie - Schleifen": theorieOrdner.schleifenTheorie,
+    "Theorie - Funktionen": theorieOrdner.funktionenTheorie
 }
 selected = "Geschichte"
 
@@ -68,7 +86,7 @@ if authentication_status:
     # sidebar menu
     with st.sidebar:
         selected = option_menu("Navigation", list(PAGES.keys()), 
-            icons=['book-fill', 'file-code-fill', 'file-code', 'file-code', 'camera-video-fill', 'camera-video', 'camera-video'], menu_icon="compass", default_index=0)
+            icons=['book-fill', 'file-code-fill', 'file-code', 'file-code', 'file-code', 'file-code', 'file-code', 'file-code', 'camera-video-fill', 'camera-video', 'camera-video', 'camera-video', 'camera-video', 'camera-video', 'camera-video', 'camera-video'], menu_icon="compass", default_index=0)
     authenticator.logout('Logout', 'sidebar')
         
     

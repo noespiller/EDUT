@@ -22,7 +22,7 @@ def run():
 def app():
     print("aufgaben.app()")
     st.title('Aufgaben')
-    st.write('In diesem Bereich kannst du Aufgaben zu den verschiedenen Themengebieten lösen, die in den Theorievideos behandelt werden.')
+    st.markdown("""## Herzlich willkommen zu den Aufgaben!\nIn diesem Bereich kannst du Aufgaben zu den verschiedenen Themengebieten lösen, die in den Theorievideos behandelt werden. Übe hier für die Aufgaben in der Geschichte!""")
     #st.write('Willkommen zu den Aufgaben')
     #st.write("Themenfelder")
     

@@ -11,7 +11,8 @@ def session_state_to_json():
     return dictionary
 
 def handle_errors(error):
-    st.write('output:', error.decode("utf-8"))
+    #TODO height weg = 200
+    st.text_area('Konsole:', error.decode("utf-8"))
     error_code = error.decode("utf-8")
     error_line = error_code.split(" ")
     
@@ -24,7 +25,8 @@ def handle_errors(error):
         
 def handle_code_output(output, error):
     if(len(error) == 0):
-        st.text_area('output:', output.decode('utf-8'))
+        # TODO height weg
+        st.text_area('Konsole:', output.decode('utf-8'))
         return True
     else:
         handle_errors(error)
@@ -84,7 +86,7 @@ def evaluate_code(title, code, eval_func):
         if code_runs:
             if eval_func(code, output):
                 st.success("Super!")
-                st.balloons()
+                #st.balloons()
                 update_session_state(global_constants.AUFGABE_KEY + title, code)
                 return True
             else:

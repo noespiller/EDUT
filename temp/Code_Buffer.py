@@ -1,2 +1,1 @@
-meinName = "Hi"
-print(meinName)
+print(3)
