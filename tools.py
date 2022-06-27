@@ -17,7 +17,30 @@ def handle_errors(error):
     
     if('IndentationError' in error.decode("utf-8")):
         error_text = '''Ein IndentationError taucht immer dann auf, wenn Code in Python falsch eingerückt ist.
-                 Der Fehler liegt in Zeile Nummer {} vor.'''.format(error_line[6])
+        \nDer Fehler liegt in Zeile Nummer {} vor.'''.format(error_line[6])
+        #st.write("<font color='red'>{}</font>".format(error_text), unsafe_allow_html=True)
+        st.info(error_text)
+        #st.warning(error_text)
+        
+    if('SyntaxError' in error.decode("utf-8")):
+        error_text = '''Ein SyntaxError taucht meistens dann auf, wenn du eine Klammer vergessen hast zu öffnen oder zu schließen.
+        \nDer Fehler liegt in Zeile Nummer {} vor.'''.format(error_line[6])
+        #st.write("<font color='red'>{}</font>".format(error_text), unsafe_allow_html=True)
+        st.info(error_text)
+        #st.warning(error_text)
+        
+    if('TypeError' in error.decode("utf-8")):
+        error_text = '''Ein TypeError taucht immer dann auf, wenn ein Fehler mit Datentypen vorliegt. 
+        Schaue am besten nochmal unser Video zu Datentypen an wenn du Probleme hast den Error zu finden.
+        \nDer Fehler liegt in Zeile Nummer {} vor.'''.format(error_line[6])
+        #st.write("<font color='red'>{}</font>".format(error_text), unsafe_allow_html=True)
+        st.info(error_text)
+        #st.warning(error_text)
+        
+    if('NameError' in error.decode("utf-8")):
+        error_text = '''Ein NameError taucht immer dann auf, wenn ein eine Variable noch nicht existiert aber benutzt werden soll. 
+        Dieser taucht meistens auf, wenn man anstatt einer globalen Variable, eine Lokale Variable verwenden will, diese aber nichtmehr existiert.
+        \nDer Fehler liegt in Zeile Nummer {} vor.'''.format(error_line[6])
         #st.write("<font color='red'>{}</font>".format(error_text), unsafe_allow_html=True)
         st.info(error_text)
         #st.warning(error_text)
