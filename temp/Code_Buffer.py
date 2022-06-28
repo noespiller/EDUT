@@ -1,1 +1,1 @@
-print("Herzlich Willkommen zum Kurs!")
+print("hi")

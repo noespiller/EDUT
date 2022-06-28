@@ -99,7 +99,7 @@ if authentication_status:
 elif authentication_status == False:
     st.error('Benutzername/Passwort ist falsch')
 elif authentication_status == None:
-    st.warning('Bitte gebe dein Benutzername und Passwort ein.')
+    st.warning('Bitte gebe deinen Benutzername und Passwort ein.')
 
 
 

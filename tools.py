@@ -18,6 +18,7 @@ def handle_errors(error):
     
     if('IndentationError' in error.decode("utf-8")):
         error_text = '''Ein IndentationError taucht immer dann auf, wenn Code in Python falsch eingerückt ist.
+        Das heißt, dass dir in deinem Code irgendwo Leerzeichen fehlen, oder zu viele vorhanden sind.
         \nDer Fehler liegt in Zeile Nummer {} vor.'''.format(error_line[6])
         #st.write("<font color='red'>{}</font>".format(error_text), unsafe_allow_html=True)
         st.info(error_text)
@@ -40,8 +41,9 @@ def handle_errors(error):
         
     if('NameError' in error.decode("utf-8")):
         error_text = '''Ein NameError taucht immer dann auf, wenn ein eine Variable noch nicht existiert aber benutzt werden soll. 
-        Dieser taucht meistens auf, wenn man anstatt einer globalen Variable, eine Lokale Variable verwenden will, diese aber nichtmehr existiert.
-        \nDer Fehler liegt in Zeile Nummer {} vor.'''.format(error_line[6])
+        Schau, ob du deine Variable richtig geschrieben, und Groß- und Kleinschreibung beachtet hast.
+        Wenn du das gemacht hast, kann es sein, dass du statt einer globalen Variable eine lokale Variable verwenden willst, diese aber nicht mehr existiert.
+        \nDer Fehler liegt in Zeile Nummer {} vor.'''.format(error_line[10])
         #st.write("<font color='red'>{}</font>".format(error_text), unsafe_allow_html=True)
         st.info(error_text)
         #st.warning(error_text)
