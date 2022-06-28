@@ -6,7 +6,7 @@ THEMEN = {
 
 AUFGABE_KEY = "Aufgabe: "
 
-UNCHANGEABLE_SESSION_STATE_KEYS = ["init", "authentication_status", "username", "name", "logout"]
+UNCHANGEABLE_SESSION_STATE_KEYS = ["init", "authentication_status", "username", "name", "logout", "output", "errors"]
 
 
 

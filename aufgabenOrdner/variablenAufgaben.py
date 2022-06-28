@@ -55,7 +55,7 @@ def aufgabe_plus(index):
 
 def aufgabe_mein_name(index):
     title = "Mein Name"
-    aufgabenbeschreibung = "Lege eine Variable mit dem Namen *\"meinName\"* an und speichere darin deinen Namen. Gib dann den Satz *\"Hallo, ich heiße <name>.\"* in der Konsole aus. Benutze die Variable *\"meinName\"*, um die Ausgabe zu machen."
+    aufgabenbeschreibung = "Lege eine Variable mit dem Namen *\"meinName\"* an und speichere darin deinen Namen. Gib dann den Satz *\"Hallo, ich bin <name>.\"* in der Konsole aus. Benutze die Variable *\"meinName\"*, um die Ausgabe zu machen."
     code = layouts.aufgabe_layout(title, aufgabenbeschreibung)
     
     def evaluate_code(co, out):
@@ -69,7 +69,7 @@ def aufgabe_mein_name(index):
                 
 def aufgabe_mein_name_und_alter(index):
     title = "Mein Name und Alter"
-    aufgabenbeschreibung = "Erweitere die Aufgabe von oben und lege noch eine Variable *\"meinAlter\"* an. Gib dann den Satz *\"Hallo, ich heiße <name> und bin <alter> Jahre alt.\"* in der Konsole aus. Benutze die Variablen *\"meinName\"* und *\"meinAlter\"*, um die Ausgabe zu machen."
+    aufgabenbeschreibung = "Erweitere die Aufgabe von oben und lege noch eine Variable *\"meinAlter\"* an. Gib dann den Satz *\"Hallo, ich bin <name> und bin <alter> Jahre alt.\"* in der Konsole aus. Benutze die Variablen *\"meinName\"* und *\"meinAlter\"*, um die Ausgabe zu machen."
     code = layouts.aufgabe_layout("Mein Name und Alter", aufgabenbeschreibung)
     
     def evaluate_code(co, out):

@@ -25,7 +25,7 @@ def handle_errors(error):
         #st.warning(error_text)
         
     if('SyntaxError' in error.decode("utf-8")):
-        error_text = '''Ein SyntaxError taucht meistens dann auf, wenn du eine Klammer vergessen hast zu öffnen oder zu schließen.
+        error_text = '''Ein SyntaxError taucht meistens auf, wenn du eine Klammer vergessen hast zu öffnen oder zu schließen. Es kann aber auch sein, dass du vergessen hast, Anführungszeichen zu setzen.
         \nDer Fehler liegt in Zeile Nummer {} vor.'''.format(error_line[6])
         #st.write("<font color='red'>{}</font>".format(error_text), unsafe_allow_html=True)
         st.info(error_text)
@@ -52,6 +52,7 @@ def handle_code_output(output, error):
     if(len(error) == 0):
         # TODO height weg
         st.text_area('Konsole:', output.decode('utf-8'), key='output')
+        print(output.decode('utf-8'))
         return True
     else:
         handle_errors(error)
