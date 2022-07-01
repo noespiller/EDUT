@@ -8,3 +8,4 @@
      Run the command `streamlit run ...`  
      **It's important that you run the command in the path that the `app.py` file is in!!!!!!**
   4. A browser tab with the running application should open
+  5. You can use the username nspiller with the password 123
