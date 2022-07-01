@@ -1,5 +1,8 @@
 # EDUT
 
+## Try the project online
+You can use this [link](https://noespiller-edut-app-mosbvi.streamlitapp.com/) to try out the project online (The error messages and line numbers might not be shown correctly here). Use the username nspiller and the password 123
+
 ## How to run the project on your computer
   1. Install the necessary packages in your environment (streamlit, streamlit-ace, streamlit-authenticator, streamlit-option-menu)
   2. Run the file `app.py`
